@@ -1,0 +1,11 @@
+rootProject.name = 'Library-management-system'
+include 'server'
+include 'book'
+include 'order'
+include 'user'
+include 'client'
+include 'stash'
+include 'config-service'
+include 'geteway'
+include 'registry'
+
