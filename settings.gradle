@@ -8,4 +8,7 @@ include 'stash'
 include 'config-service'
 include 'geteway'
 include 'registry'
+include 'gateway'
+include 'notification'
+include 'config'
 
