@@ -4,27 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="170b7de0-8bc6-4ef7-8edd-d7db0de8ccc8" name="Changes" comment="initial system">
-      <change afterPath="$PROJECT_DIR$/book/src/main/java/BookApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/ClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/main/java/ConfigApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/main/resources/service/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/main/resources/service/client-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/NotificationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry/src/main/java/RegistryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/serverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stash/src/main/java/StashApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/src/main/java/UserApplication.java" afterDir="false" />
+    <list default="true" id="170b7de0-8bc6-4ef7-8edd-d7db0de8ccc8" name="Changes" comment="init-config">
+      <change afterPath="$PROJECT_DIR$/book/lombok.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/src/main/resources/service/gateway.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/src/main/resources/service/notification.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/src/main/resources/service/stash.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/src/main/resources/service/user.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/lombok.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stash/lombok.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stash/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/lombok.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/user/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/user/dto/UserRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/user/dto/UserResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/user/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/user/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geteway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/notification/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/book/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/BookApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book/src/main/java/com/book/BookApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/ClientApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/java/ConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/java/com/ConfigApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/resources/service/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/service/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/resources/service/client-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/service/book.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/notification/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/com/NotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/registry/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/src/main/java/RegistryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/registry/src/main/java/com/RegistryApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/serverApplication.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stash/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/stash/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stash/src/main/java/StashApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/stash/src/main/java/com/StashApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/UserApplication.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +67,53 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/book">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/client">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/config">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/config-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/notification">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/gateway">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/registry">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/stash">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/user">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Library-management-system" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Library-management-system" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Library-management-system" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -63,6 +132,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -78,11 +163,144 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "C:/Users/andrew/IdeaProjects/GitProjects/Library-management-system/registry/src/main/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15917969",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "spring.configuration.checksum": "232be111e724a8eb45bfcba55feb8e83"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andrew\IdeaProjects\GitProjects\Library-management-system\registry\src\main\resources" />
+      <recent name="C:\Users\andrew\IdeaProjects\GitProjects\Library-management-system\notification\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andrew\IdeaProjects\GitProjects\Library-management-system\registry\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Library-management-system [build]">
+    <configuration name="Library-management-system [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Library-management-system [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Library-management-system:stash [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/stash" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Library-management-system:user [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/user" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Library-management-system:user [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/user" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Library-management-system [build]" />
+        <item itemvalue="Gradle.Library-management-system [clean]" />
+        <item itemvalue="Gradle.Library-management-system:user [build]" />
+        <item itemvalue="Gradle.Library-management-system:user [clean]" />
+        <item itemvalue="Gradle.Library-management-system:stash [build]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,7 +309,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666976312653</updated>
-      <workItem from="1666976312883" duration="5609000" />
+      <workItem from="1666976312883" duration="9502000" />
+      <workItem from="1667030986865" duration="266000" />
+      <workItem from="1667031276598" duration="1899000" />
+      <workItem from="1667113171405" duration="1323000" />
+      <workItem from="1667128036100" duration="6636000" />
+      <workItem from="1667155432651" duration="1995000" />
     </task>
     <task id="LOCAL-00001" summary="initial system">
       <created>1666979416991</created>
@@ -100,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666979416991</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init-config">
+      <created>1666984098153</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666984098153</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +350,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial system" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial system" />
+    <MESSAGE value="init-config" />
+    <option name="LAST_COMMIT_MESSAGE" value="init-config" />
   </component>
 </project>
