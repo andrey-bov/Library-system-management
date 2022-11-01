@@ -4,7 +4,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 }
 
-group 'com'
+group 'com.registry'
 version '1.0-SNAPSHOT'
 sourceCompatibility = '1.8'
 
@@ -19,7 +19,7 @@ ext {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'com.RegistryApplication'
+                'Main-Class': 'com.registry.RegistryApplication'
         )
     }
 }

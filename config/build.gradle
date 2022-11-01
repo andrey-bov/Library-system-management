@@ -4,7 +4,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 }
 
-group 'com'
+group 'com.config'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -14,7 +14,7 @@ repositories {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'com.ConfigApplication'
+                'Main-Class': 'com.config.ConfigApplication'
         )
     }
 }
