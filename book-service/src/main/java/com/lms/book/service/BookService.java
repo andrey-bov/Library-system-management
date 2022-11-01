@@ -22,8 +22,8 @@ public class BookService {
                 (() -> new BookNotFoundException("Unable to found  book with id: " + bookId));
     }
 
-    public Long createBook(String title, String author,
-                           Integer data, OffsetDateTime creationDate) {
+    public Long addBook(String title, String author,
+                        Integer data, OffsetDateTime addDataTime) {
         Book book = new Book(title, author, data, OffsetDateTime.now());
         return bookRepository.save(book).getBookId();
     }

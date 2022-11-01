@@ -25,7 +25,7 @@ public class BookController {
 
     @PostMapping("/")
     public Long createBook(@RequestBody BookRequestDTO bookRequestDTO) {
-        return bookService.createBook(bookRequestDTO.getTitle(), bookRequestDTO.getAuthor(), bookRequestDTO.getData(), OffsetDateTime.now());
+        return bookService.addBook(bookRequestDTO.getTitle(), bookRequestDTO.getAuthor(), bookRequestDTO.getData(), OffsetDateTime.now());
     }
 
     @PutMapping("/{bookId}")

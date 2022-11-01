@@ -7,7 +7,6 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.time.OffsetDateTime;
 
-
 @Entity
 @Getter
 @Setter
@@ -25,7 +24,7 @@ public class Book {
 
     private Integer data;
 
-    private OffsetDateTime creationDate;
+    private OffsetDateTime addDataTime;
 
     public Book(String title, String author, Integer data) {
         this.title = title;
@@ -33,11 +32,11 @@ public class Book {
         this.data = data;
     }
 
-    public Book(String title, String author, Integer data, OffsetDateTime creationDate) {
+    public Book(String title, String author, Integer data, OffsetDateTime addDataTime) {
         this.title = title;
         this.author = author;
         this.data = data;
-        this.creationDate = creationDate;
+        this.addDataTime = addDataTime;
     }
 
     public Book(Long bookId, String title, String author, Integer data) {

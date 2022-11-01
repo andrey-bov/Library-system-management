@@ -4,7 +4,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 }
 
-group 'com.gateway'
+group 'com.lms.gateway'
 version '1.0-SNAPSHOT'
 sourceCompatibility = '1.8'
 
@@ -15,7 +15,7 @@ repositories {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'com.gateway.GatewayApplication'
+                'Main-Class': 'com.lms.gateway.GatewayApplication'
         )
     }
 }
