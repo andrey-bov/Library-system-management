@@ -1,4 +1,4 @@
-package com.lms.order.controller.dto;
+package com.lms.order.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package com.lms.order.rest;
+package com.lms.order.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

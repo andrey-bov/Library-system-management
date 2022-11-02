@@ -1,11 +1,11 @@
 package com.lms.order.service;
 
-import com.lms.order.controller.dto.OrderDTO;
+import com.lms.order.dto.OrderDTO;
 import com.lms.order.entity.Order;
 import com.lms.order.repository.OrderRepository;
-import com.lms.order.rest.BookDTO;
+import com.lms.order.dto.BookDTO;
 import com.lms.order.rest.BookServiceClient;
-import com.lms.order.rest.UserDTO;
+import com.lms.order.dto.UserDTO;
 import com.lms.order.rest.UserServiceClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -3,6 +3,11 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+build
+gradle
+.gradle
+.idea
+
 
 ### STS ###
 .apt_generated
@@ -50,6 +55,7 @@ local.properties
 .idea
 *.eml
 .shelf
+.idea
 
 # External tool builders
 .externalToolBuilders/

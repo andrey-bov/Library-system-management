@@ -1,6 +1,6 @@
 package com.lms.order.controller;
 
-import com.lms.order.controller.dto.OrderDTO;
+import com.lms.order.dto.OrderDTO;
 import com.lms.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

@@ -1,5 +1,6 @@
 package com.lms.order.rest;
 
+import com.lms.order.dto.BookDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
