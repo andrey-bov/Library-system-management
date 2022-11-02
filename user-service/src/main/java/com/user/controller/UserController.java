@@ -1,10 +1,14 @@
 package com.user.controller;
 
-import com.user.dto.UserRequestDTO;
-import com.user.dto.UserResponseDTO;
+import com.user.dto.UserDTO;
+import com.user.entity.User;
 import com.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class UserController {
@@ -17,25 +21,32 @@ public class UserController {
     }
 
     @GetMapping("/{userId}")
-    public UserResponseDTO getUser(@PathVariable Long userId) {
-        return new UserResponseDTO(userService.getUserById(userId));
+    public UserDTO getUserById(@PathVariable Long userId) {
+        return new UserDTO(userService.getUserById(userId));
     }
 
     @PostMapping("/")
-    public Long createUser(@RequestBody UserRequestDTO userRequestDTO) {
-        return userService.createUser(userRequestDTO.getName(),
-                userRequestDTO.getEmail(), userRequestDTO.getPhone());
+    public ResponseEntity<Long> createUser(@RequestBody UserDTO userDTO) {
+        return ResponseEntity.ok(userService.createUser(userDTO.getName(),
+                userDTO.getEmail(), userDTO.getPhone()));
     }
 
     @PutMapping("/{userId}")
-    public UserResponseDTO updateUser(@RequestBody UserRequestDTO userRequestDTO,
-                                      @PathVariable Long userId) {
-        return new UserResponseDTO(userService.updateUser(userId, userRequestDTO.getName(),
-                userRequestDTO.getEmail(), userRequestDTO.getPhone()));
+    public ResponseEntity<UserDTO> updateUser(@RequestBody UserDTO userDTO,
+                              @PathVariable Long userId) {
+        UserDTO user = new UserDTO(userService.updateUser(userId, userDTO.getName(),
+                userDTO.getEmail(), userDTO.getPhone()));
+        return  ResponseEntity.ok(user);
     }
 
     @DeleteMapping("/{userId}")
-    public UserResponseDTO deleteUser(@PathVariable Long userId) {
-        return new UserResponseDTO(userService.deleteUser(userId));
+    public ResponseEntity<UserDTO> deleteUser(@PathVariable Long userId) {
+        userService.deleteUser(userId);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @GetMapping("/")
+    public ResponseEntity<List<User>> getAllUsers() {
+        return ResponseEntity.ok(userService.findAll());
     }
 }

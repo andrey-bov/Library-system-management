@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;
+import java.util.List;
 
 @Service
 public class BookService {
@@ -39,5 +40,9 @@ public class BookService {
         Book deleteBook = getBookId(bookId);
         bookRepository.deleteById(bookId);
         return deleteBook;
+    }
+
+    public List<Book> getAllBooks() {
+        return bookRepository.findAll();
     }
 }

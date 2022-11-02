@@ -1,7 +1,7 @@
 rootProject.name = 'Library-management-system'
 include 'book-service'
 include 'user-service'
-include 'stash-service'
+include 'order-service'
 include 'gateway'
 include 'registry'
 include 'notification'

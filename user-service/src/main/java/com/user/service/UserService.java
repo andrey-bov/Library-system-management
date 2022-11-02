@@ -1,5 +1,6 @@
 package com.user.service;
 
+import com.user.dto.UserDTO;
 import com.user.entity.User;
 import com.user.exception.UserNotFoundException;
 import com.user.repository.UserRepository;
@@ -7,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class UserService {
@@ -34,12 +37,18 @@ public class UserService {
         user.setName(name);
         user.setPhone(phone);
         user.setEmail(email);
+        user.setCreationData(OffsetDateTime.now());
         return this.userRepository.save(user);
     }
 
-    public User deleteUser(Long userIdId) {
-        User deleteUser = getUserById(userIdId);
-         userRepository.deleteById(userIdId);
+    public User deleteUser(Long userId) {
+        User deleteUser = getUserById(userId);
+         userRepository.deleteById(userId);
          return deleteUser;
     }
+
+    public List<User> findAll() {
+        return userRepository.findAll();
+    }
+
 }

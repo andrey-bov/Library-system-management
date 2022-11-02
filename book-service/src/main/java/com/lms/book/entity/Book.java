@@ -11,11 +11,12 @@ import java.time.OffsetDateTime;
 @Getter
 @Setter
 @NoArgsConstructor
-
+@Table(name = "book")
 public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+
     private Long bookId;
 
     private String title;

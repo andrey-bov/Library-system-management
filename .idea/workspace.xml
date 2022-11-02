@@ -4,30 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="170b7de0-8bc6-4ef7-8edd-d7db0de8ccc8" name="Changes" comment="implement-book-service">
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/lms/notification/config/MailConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/lms/notification/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/lms/notification/service/DepositMessageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/lms/notification/service/DepositResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/mail-props.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stash-service/src/main/java/com/stash/entity/Stash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="170b7de0-8bc6-4ef7-8edd-d7db0de8ccc8" name="Changes" comment="added-rabbitmq">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/lms/order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/lms/order/controller/dto/OrderDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/lms/order/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/lms/order/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/lms/order/rest/BookDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/lms/order/rest/BookServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/lms/order/rest/UserServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/lms/order/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/lms/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/lms/book/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/lms/book/dto/BookRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/lms/book/dto/BookResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/lms/book/dto/BookDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/lms/book/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/lms/book/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/lms/book/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/lms/book/repository/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/lms/book/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/lms/book/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/lms/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/notification/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/com/lms/notification/NotificationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stash-service/src/main/java/com/stash/StashApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/stash-service/src/main/java/com/stash/StashApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/resources/services/gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/services/gateway.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/resources/services/notification.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/services/notification.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/resources/services/stash-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/services/order-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/lms/notification/service/DepositMessageHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/lms/notification/service/DepositResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stash-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stash-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stash-service/lombok.config" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/lombok.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stash-service/src/main/java/com/stash/StashApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/lms/order/OrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stash-service/src/main/java/com/stash/entity/Stash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stash-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user/dto/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/lms/order/rest/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user/dto/UserResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/user/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +101,23 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Library-management-system" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Library-management-system" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Library-management-system" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -85,6 +128,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="com.haulmont.jpb.JpaRepository" />
         <option value="Class" />
       </list>
     </option>
@@ -118,28 +162,28 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/andrew/IdeaProjects/GitProjects/Library-management-system/notification/src/main/java/com/lms/notification",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15917969",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reactor",
-    "spring.configuration.checksum": "232be111e724a8eb45bfcba55feb8e83"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/andrew/IdeaProjects/GitProjects/Library-management-system&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15917969&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reactor&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f113e09fa70cc8374a5e4dccfceb8918&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -162,7 +206,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.NotificationApplication">
+  <component name="RunManager" selected="Spring Boot.OrderApplication">
     <configuration name="Library-management-system [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -260,16 +304,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Library-management-system.registry.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.registry.RegistryApplication" />
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Library-management-system.order-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lms.order.OrderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StashApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Library-management-system.stash-service.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stash.StashApplication" />
+    <configuration name="RegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Library-management-system.registry.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.registry.RegistryApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -289,8 +333,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Gradle.Library-management-system [build]" />
         <item itemvalue="Gradle.Library-management-system [clean]" />
         <item itemvalue="Gradle.Library-management-system:user [build]" />
@@ -315,6 +359,9 @@
       <workItem from="1667234103731" duration="263000" />
       <workItem from="1667234865316" duration="2056000" />
       <workItem from="1667283180015" duration="14469000" />
+      <workItem from="1667319184357" duration="9779000" />
+      <workItem from="1667372825253" duration="31401000" />
+      <workItem from="1667411359565" duration="1321000" />
     </task>
     <task id="LOCAL-00001" summary="initial system">
       <created>1666979416991</created>

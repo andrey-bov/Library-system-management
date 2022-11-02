@@ -17,19 +17,19 @@ zuul:
     socket-timeout-millis: 20000
 
   routes:
-    book:
-      path: /book/**
-      serviceId: book
+    book-service:
+      path: /books/**
+      serviceId: book-service
       stripPrefix: false
 
-    user:
-      path: /user/**
-      serviceId: user
+    user-service:
+      path: /users/**
+      serviceId: user-service
       stripPrefix: false
 
-    stash:
-      path: /stash/**
-      serviceId: stash
+    order-service:
+      path: /orders/**
+      serviceId: order-service
       stripPrefix: false
 
 server:
