@@ -1,17 +1,17 @@
 package com.lms.order.service;
 
-import com.lms.order.dto.OrderDTO;
-import com.lms.order.entity.Order;
-import com.lms.order.repository.OrderRepository;
 import com.lms.order.dto.BookDTO;
-import com.lms.order.rest.BookServiceClient;
+import com.lms.order.dto.OrderDTO;
 import com.lms.order.dto.UserDTO;
+import com.lms.order.entity.Order;
+import com.lms.order.exception.OrderNotFoundException;
+import com.lms.order.repository.OrderRepository;
+import com.lms.order.rest.BookServiceClient;
 import com.lms.order.rest.UserServiceClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;
-import java.util.Optional;
 
 @Service
 public class OrderService {
@@ -35,10 +35,16 @@ public class OrderService {
         return new OrderDTO(userById.getUserId(), bookById.getBookId());
     }
 
-    public Optional<?> deleteOrder(Long orderId) {
-        Optional<Order> deleteOrder = orderRepository.findById(orderId);
+    public Order deleteOrder(Long orderId) {
+        Order deleteOrder = getOrderById(orderId);
         orderRepository.deleteById(orderId);
         return deleteOrder;
     }
+
+    public Order getOrderById(Long orderId) {
+        return orderRepository.findById(orderId).orElseThrow(() -> new OrderNotFoundException
+                ("Unable to find default order for order: " + orderId));
+    }
+
 
 }

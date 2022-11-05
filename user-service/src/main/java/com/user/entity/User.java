@@ -42,4 +42,6 @@ public class User {
         this.creationData = creationData;
     }
 
+    public User(String user, String email, String s) {
+    }
 }

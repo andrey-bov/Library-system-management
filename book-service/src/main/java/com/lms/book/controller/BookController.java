@@ -22,7 +22,7 @@ public class BookController {
 
     @GetMapping("/{bookId}")
     public ResponseEntity<BookDTO> getBookById(@PathVariable Long bookId) {
-        BookDTO bookDTO =  new BookDTO(bookService.getBookId(bookId));
+        BookDTO bookDTO = new BookDTO(bookService.getBookId(bookId));
         return ResponseEntity.ok(bookDTO);
     }
 
